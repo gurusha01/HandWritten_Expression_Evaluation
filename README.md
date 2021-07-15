@@ -11,7 +11,7 @@ The following libraries have been used for running the code:
 
 ## The neural net architecture
 The architecture is a CNN(convolutioal network) consisting  of four hidden convolutional layers with ReLU activation and three max-pooling layers followed by a softmax output layer.
-The networks is trained over a dataset of digits and the four arithmetic symbols containting around 4800 training images.
+The networks is trained over a dataset of digits and the four arithmetic symbols containting around 4800 training images which were increased to 9600 after augmentation done by Augly, Python library by Facebook.
 Find the dataset [here](https://www.kaggle.com/clarencezhao/handwritten-math-symbol-dataset). 
 
 ## Approach
@@ -28,7 +28,7 @@ generates a csv file containing the output of the model for the first subtask(cl
 ```
 python3 inference2.py testing-data-path
 ```
-generates a csv file containing the output of the model for the first subtask(value of the arithmetic expression).
+generates a csv file containing the output of the model for the second subtask with 97% training and 80% validation accuracy(value of the arithmetic expression).
 
 The  file `final.h5` is the final learning model.
 {"mode":"full","isActive":false}
